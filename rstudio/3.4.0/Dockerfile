@@ -22,6 +22,7 @@ RUN apt-get update \
     sudo \
     wget \
     multiarch-support \
+    zlib1g-dev \
   && wget -O libssl1.0.0.deb http://ftp.debian.org/debian/pool/main/o/openssl/libssl1.0.0_1.0.1t-1+deb8u8_amd64.deb \
   && dpkg -i libssl1.0.0.deb \
   && rm libssl1.0.0.deb \
